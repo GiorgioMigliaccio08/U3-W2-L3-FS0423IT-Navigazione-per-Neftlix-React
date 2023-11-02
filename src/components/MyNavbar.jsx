@@ -1,13 +1,15 @@
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import TvShows from "./TvShows";
 
 const MyNavbar = () => {
   return (
-    <Navbar variant="dark" expand="lg" style={{ backgroundColor: '#221f1f' }}>
+    <Navbar variant="dark" expand="lg" style={{ backgroundColor: "#221f1f" }}>
       <Navbar.Brand href="/">
         <img
           src="assets/logo.png"
           alt="logo"
-          style={{ width: '100px', height: '55px' }}
+          style={{ width: "100px", height: "55px" }}
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,9 +18,9 @@ const MyNavbar = () => {
           <Nav.Link className="font-weight-bold" href="/">
             Home
           </Nav.Link>
-          <Nav.Link active className="font-weight-bold" href="/">
-            TV Shows
-          </Nav.Link>
+          <Link className="nav-link" to="/TvShows">
+            <div>TV Shows</div>
+          </Link>
           <Nav.Link className="font-weight-bold" href="/">
             Movies
           </Nav.Link>
@@ -31,7 +33,7 @@ const MyNavbar = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
-}
+  );
+};
 
-export default MyNavbar
+export default MyNavbar;

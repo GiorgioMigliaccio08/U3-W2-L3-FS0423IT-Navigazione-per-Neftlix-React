@@ -113,11 +113,11 @@ const App = () => {
               />
             </>
           )}
+          <Routes>
+            <Route path="/TvShows" element={<Tvshows />} />
+          </Routes>
           <MyFooter />
         </Container>
-        <Routes>
-          <Route path="/" element={<Tvshows />} />
-        </Routes>
       </BrowserRouter>
     </div>
   );

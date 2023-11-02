@@ -33,7 +33,7 @@ const Tvshows = (props) => {
   return (
     <>
       <h3 className="fw-bold fs-4 text-white ms-3 mt-3 mb-3 fluid ">
-        Film Marvel
+        Tv Shows
       </h3>
       <Container fluid className="horizontal-scroll-container">
         {isLoading && !error && (
